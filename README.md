@@ -29,17 +29,17 @@ I'm a technology leader passionate about **observability**, **distributed system
 ## 🌟 Notable Projects
 
 ### [Jaeger](https://github.com/jaegertracing/jaeger) - CNCF Distributed Tracing Platform
-**⭐ 22.4k stars** | Open source, end-to-end distributed tracing platform
+![Stars](https://img.shields.io/github/stars/jaegertracing/jaeger?style=social) | Open source, end-to-end distributed tracing platform
 
 Jaeger is used for monitoring and troubleshooting microservices-based distributed systems. As a key contributor, I've helped shape the future of distributed tracing and observability.
 
 ### [OpenSearch](https://github.com/opensearch-project/OpenSearch)
-**⭐ 12.3k stars** | Open source distributed search and analytics engine
+![Stars](https://img.shields.io/github/stars/opensearch-project/OpenSearch?style=social) | Open source distributed search and analytics engine
 
 Contributing to the next generation of search and analytics platforms, making powerful search capabilities accessible to everyone.
 
 ### [Jaeger UI](https://github.com/jaegertracing/jaeger-ui)
-**⭐ 1.4k stars** | Web interface for Jaeger distributed tracing
+![Stars](https://img.shields.io/github/stars/jaegertracing/jaeger-ui?style=social) | Web interface for Jaeger distributed tracing
 
 Building intuitive user experiences for complex observability data.
 
