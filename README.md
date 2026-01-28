@@ -30,15 +30,15 @@ I'm a technology leader passionate about **observability**, **distributed system
 
 ## 🌟 Notable Projects
 
-### [OpenSearch](https://github.com/opensearch-project/OpenSearch)
-![Stars](https://img.shields.io/github/stars/opensearch-project/OpenSearch?style=social) | Open source distributed search and analytics engine
-
-Member of the technical steering committee and part of the founding team for this powerful open source search and analytics platform, making advanced search capabilities accessible to everyone.
-
 ### [Jaeger](https://github.com/jaegertracing/jaeger) - CNCF Distributed Tracing Platform
 ![Stars](https://img.shields.io/github/stars/jaegertracing/jaeger?style=social) | Open source, end-to-end distributed tracing platform
 
 Active maintainer and contributor helping organizations implement distributed tracing and observability at scale for microservices-based distributed systems.
+
+### [OpenSearch](https://github.com/opensearch-project/OpenSearch)
+![Stars](https://img.shields.io/github/stars/opensearch-project/OpenSearch?style=social) | Open source distributed search and analytics engine
+
+Member of the technical steering committee and part of the founding team for this powerful open source search and analytics platform, making advanced search capabilities accessible to everyone.
 
 ### [OpenTelemetry](https://github.com/open-telemetry) - CNCF Observability Framework
 ![Stars](https://img.shields.io/github/stars/open-telemetry/opentelemetry-collector?style=social) | Vendor-neutral observability framework
