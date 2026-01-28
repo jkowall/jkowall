@@ -1,16 +1,98 @@
-## Hi there 👋
+<div align="center">
 
-<!--
-**jkowall/jkowall** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+# 👋 Hi, I'm Jonah Kowall
 
-Here are some ideas to get you started:
+### 🚀 Observability Expert | Open Source Advocate | Technology Leader
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+[![Twitter Follow](https://img.shields.io/twitter/follow/jkowall?style=for-the-badge&logo=x&logoColor=white&color=1DA1F2)](https://x.com/jkowall)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/jkowall)
+[![Email](https://img.shields.io/badge/Email-jkowall%40kowall.net-EA4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:jkowall@kowall.net)
+
+</div>
+
+---
+
+## 💼 About Me
+
+I'm a technology leader passionate about **observability**, **distributed systems**, and **open source**. Currently working at **Paessler** in Pompano Beach, FL, I focus on building scalable monitoring and observability solutions that help organizations understand their complex systems.
+
+### 🎯 Expertise
+
+- 🔭 **Observability & Monitoring**: Distributed tracing, metrics, and logging
+- 🌐 **Distributed Systems**: Microservices architecture and cloud-native technologies
+- 📊 **Search & Analytics**: Elasticsearch, OpenSearch, and data platforms
+- 🛠️ **Open Source**: Active contributor and maintainer in CNCF projects
+- 🎤 **Thought Leadership**: Speaking, writing, and industry analysis as a former analyst
+- 📈 **Leadership**: Building and running development, product, UX, design, and production operations teams (100+ people) with a focus on openness, transparency, and collaborative discussion. Strong advocate for the player/coach approach where managers contribute directly to technical work.
+- 👥 **People Development**: Mentoring and building people towards successful careers through servant leadership principles, with a focus on efficiency and leveraging AI to help teams build and iterate faster
+
+---
+
+## 🌟 Notable Projects
+
+### [Jaeger](https://github.com/jaegertracing/jaeger) - CNCF Distributed Tracing Platform
+![Stars](https://img.shields.io/github/stars/jaegertracing/jaeger?style=social) | Open source, end-to-end distributed tracing platform
+
+Active maintainer and contributor helping organizations implement distributed tracing and observability at scale for microservices-based distributed systems.
+
+### [OpenSearch](https://github.com/opensearch-project/OpenSearch)
+![Stars](https://img.shields.io/github/stars/opensearch-project/OpenSearch?style=social) | Open source distributed search and analytics engine
+
+Member of the technical steering committee and part of the founding team for this powerful open source search and analytics platform, making advanced search capabilities accessible to everyone.
+
+### [OpenTelemetry](https://github.com/open-telemetry) - CNCF Observability Framework
+![Stars](https://img.shields.io/github/stars/open-telemetry/opentelemetry-collector?style=social) | Vendor-neutral observability framework
+
+Regular community participant and contributor since the project's inception, driving the future of observability standards and tooling.
+
+### [Jaeger UI](https://github.com/jaegertracing/jaeger-ui)
+![Stars](https://img.shields.io/github/stars/jaegertracing/jaeger-ui?style=social) | Web interface for Jaeger distributed tracing
+
+Building intuitive user experiences for complex observability data.
+
+---
+
+## 🛠️ Tech Stack
+
+```text
+Languages:      Go, Java, JavaScript/TypeScript, Python
+Platforms:      Kubernetes, Docker, AWS, Azure, Google Cloud, Oracle Cloud
+Observability:  Jaeger, OpenTelemetry, Prometheus, Grafana, Thanos
+Search:         OpenSearch, Elasticsearch
+Databases:      PostgreSQL, Cassandra, ClickHouse, Redis
+Tools:          Git, CI/CD, Terraform, Helm
+```
+
+---
+
+## 📊 GitHub Stats
+
+<div align="center">
+
+![Jonah's GitHub Stats](https://github-readme-stats.vercel.app/api?username=jkowall&show_icons=true&theme=tokyonight&hide_border=true)
+
+![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=jkowall&layout=compact&theme=tokyonight&hide_border=true)
+
+</div>
+
+---
+
+## 🤝 Let's Connect!
+
+I'm always interested in discussing:
+- 💡 Observability and monitoring strategies
+- 🌐 Open source collaboration opportunities
+- 🚀 Cloud-native architectures
+- 📈 Technology leadership and team building
+
+Feel free to reach out via [Twitter/X](https://x.com/jkowall), [LinkedIn](https://linkedin.com/in/jkowall), or [email](mailto:jkowall@kowall.net)!
+
+---
+
+<div align="center">
+
+### 💭 *"Making complex systems observable, one trace at a time."*
+
+![Profile Views](https://komarev.com/ghpvc/?username=jkowall&style=for-the-badge&color=blueviolet)
+
+</div>
