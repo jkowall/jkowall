@@ -31,12 +31,12 @@ I'm a technology leader passionate about **observability**, **distributed system
 ### [Jaeger](https://github.com/jaegertracing/jaeger) - CNCF Distributed Tracing Platform
 ![Stars](https://img.shields.io/github/stars/jaegertracing/jaeger?style=social) | Open source, end-to-end distributed tracing platform
 
-Jaeger is used for monitoring and troubleshooting microservices-based distributed systems. As a key contributor, I've helped shape the future of distributed tracing and observability.
+Jaeger is used for monitoring and troubleshooting microservices-based distributed systems, helping organizations implement distributed tracing and observability at scale.
 
 ### [OpenSearch](https://github.com/opensearch-project/OpenSearch)
 ![Stars](https://img.shields.io/github/stars/opensearch-project/OpenSearch?style=social) | Open source distributed search and analytics engine
 
-Contributing to the next generation of search and analytics platforms, making powerful search capabilities accessible to everyone.
+A powerful open source search and analytics platform that makes advanced search capabilities accessible to everyone.
 
 ### [Jaeger UI](https://github.com/jaegertracing/jaeger-ui)
 ![Stars](https://img.shields.io/github/stars/jaegertracing/jaeger-ui?style=social) | Web interface for Jaeger distributed tracing
@@ -62,7 +62,7 @@ Tools:          Git, CI/CD, Terraform, Helm
 
 <div align="center">
 
-![Jonah's GitHub Stats](https://github-readme-stats.vercel.app/api?username=jkowall&show_icons=true&theme=tokyonight&hide_border=true&count_private=true)
+![Jonah's GitHub Stats](https://github-readme-stats.vercel.app/api?username=jkowall&show_icons=true&theme=tokyonight&hide_border=true)
 
 ![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=jkowall&layout=compact&theme=tokyonight&hide_border=true)
 
