@@ -23,7 +23,7 @@ I'm a technology leader passionate about **observability**, **distributed system
 - 📊 **Search & Analytics**: Elasticsearch, OpenSearch, and data platforms
 - 🛠️ **Open Source**: Active contributor and maintainer in CNCF projects
 - 🎤 **Thought Leadership**: Speaking, writing, and industry analysis as a former analyst
-- 📈 **Leadership**: Building and running development, product, UX, design, and production operations teams (up to 100+ people) with a focus on openness, transparency, and collaborative discussion. Strong advocate for the player/coach approach where managers contribute directly to technical work.
+- 📈 **Leadership**: Building and running development, product, UX, design, and production operations teams (100+ people) with a focus on openness, transparency, and collaborative discussion. Strong advocate for the player/coach approach where managers contribute directly to technical work.
 - 👥 **People Development**: Mentoring and building people towards successful careers through servant leadership principles, with a focus on efficiency and leveraging AI to help teams build and iterate faster
 
 ---
