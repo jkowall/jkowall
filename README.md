@@ -57,9 +57,9 @@ Building intuitive user experiences for complex observability data.
 ```text
 Languages:      Go, Java, JavaScript/TypeScript, Python
 Platforms:      Kubernetes, Docker, AWS, Azure, Google Cloud, Oracle Cloud
-Observability:  Jaeger, OpenTelemetry, Prometheus, Grafana
+Observability:  Jaeger, OpenTelemetry, Prometheus, Grafana, Thanos
 Search:         OpenSearch, Elasticsearch
-Databases:      PostgreSQL, Cassandra, ClickHouse, Redis, Thanos
+Databases:      PostgreSQL, Cassandra, ClickHouse, Redis
 Tools:          Git, CI/CD, Terraform, Helm
 ```
 
