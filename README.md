@@ -22,7 +22,9 @@ I'm a technology leader passionate about **observability**, **distributed system
 - 🌐 **Distributed Systems**: Microservices architecture and cloud-native technologies
 - 📊 **Search & Analytics**: Elasticsearch, OpenSearch, and data platforms
 - 🛠️ **Open Source**: Active contributor and maintainer in CNCF projects
-- 📈 **Leadership**: Building teams and driving technical strategy
+- 🎤 **Thought Leadership**: Speaking, writing, and industry analysis as a former analyst
+- 📈 **Leadership**: Building and running development, product, UX, design, and production operations teams with a focus on openness, transparency, and collaborative discussion
+- 👥 **People Development**: Mentoring and building people towards successful careers through servant leadership principles
 
 ---
 
@@ -31,12 +33,17 @@ I'm a technology leader passionate about **observability**, **distributed system
 ### [Jaeger](https://github.com/jaegertracing/jaeger) - CNCF Distributed Tracing Platform
 ![Stars](https://img.shields.io/github/stars/jaegertracing/jaeger?style=social) | Open source, end-to-end distributed tracing platform
 
-Jaeger is used for monitoring and troubleshooting microservices-based distributed systems, helping organizations implement distributed tracing and observability at scale.
+Active maintainer and contributor helping organizations implement distributed tracing and observability at scale for microservices-based distributed systems.
+
+### [OpenTelemetry](https://github.com/open-telemetry) - CNCF Observability Framework
+![Stars](https://img.shields.io/github/stars/open-telemetry/opentelemetry-collector?style=social) | Vendor-neutral observability framework
+
+Regular community participant and contributor since the project's inception, driving the future of observability standards and tooling.
 
 ### [OpenSearch](https://github.com/opensearch-project/OpenSearch)
 ![Stars](https://img.shields.io/github/stars/opensearch-project/OpenSearch?style=social) | Open source distributed search and analytics engine
 
-A powerful open source search and analytics platform that makes advanced search capabilities accessible to everyone.
+Contributor to the powerful open source search and analytics platform, making advanced search capabilities accessible to everyone.
 
 ### [Jaeger UI](https://github.com/jaegertracing/jaeger-ui)
 ![Stars](https://img.shields.io/github/stars/jaegertracing/jaeger-ui?style=social) | Web interface for Jaeger distributed tracing
@@ -49,10 +56,10 @@ Building intuitive user experiences for complex observability data.
 
 ```text
 Languages:      Go, Java, JavaScript/TypeScript, Python
-Platforms:      Kubernetes, Docker, AWS, Azure, GCP
+Platforms:      Kubernetes, Docker, AWS, Azure, Google Cloud, Oracle Cloud
 Observability:  Jaeger, OpenTelemetry, Prometheus, Grafana
 Search:         OpenSearch, Elasticsearch
-Databases:      PostgreSQL, Cassandra, Redis
+Databases:      PostgreSQL, Cassandra, ClickHouse, Redis, Thanos
 Tools:          Git, CI/CD, Terraform, Helm
 ```
 
