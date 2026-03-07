@@ -54,14 +54,14 @@ Building intuitive user experiences for complex observability data.
 
 ## 🛠️ Tech Stack
 
-```text
-Languages:      Go, Java, JavaScript/TypeScript, Python
-Platforms:      Kubernetes, Docker, AWS, Azure, Google Cloud, Oracle Cloud
-Observability:  Jaeger, OpenTelemetry, Prometheus, Grafana, Thanos
-Search:         OpenSearch, Elasticsearch
-Databases:      PostgreSQL, Cassandra, ClickHouse, Redis
-Tools:          Git, CI/CD, Terraform, Helm
-```
+| Category | Technologies |
+|---|---|
+| 💻 **Languages** | Go, Java, JavaScript/TypeScript, Python |
+| ☁️ **Platforms** | Kubernetes, Docker, AWS, Azure, Google Cloud, Oracle Cloud |
+| 🔭 **Observability** | Jaeger, OpenTelemetry, Prometheus, Grafana, Thanos |
+| 🔍 **Search** | OpenSearch, Elasticsearch |
+| 🗄️ **Databases** | PostgreSQL, Cassandra, ClickHouse, Redis |
+| 🛠️ **Tools** | Git, CI/CD, Terraform, Helm |
 
 ---
 
@@ -69,9 +69,11 @@ Tools:          Git, CI/CD, Terraform, Helm
 
 <div align="center">
 
-![Jonah's GitHub Stats](https://github-readme-stats.vercel.app/api?username=jkowall&show_icons=true&theme=tokyonight&hide_border=true)
+![Jonah's GitHub Stats](https://github-stats-extended.vercel.app/api?username=jkowall&show_icons=true&theme=tokyonight&hide_border=true)
 
-![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=jkowall&layout=compact&theme=tokyonight&hide_border=true)
+![Top Languages](https://github-stats-extended.vercel.app/api/top-langs/?username=jkowall&layout=compact&theme=tokyonight&hide_border=true)
+
+![GitHub Streak](https://github-readme-streak-stats.herokuapp.com/?user=jkowall&theme=tokyonight&hide_border=true)
 
 </div>
 
