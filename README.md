@@ -14,7 +14,7 @@
 
 ## 💼 About Me
 
-I'm a technology leader passionate about **observability**, **distributed systems**, and **open source**. Currently working at **Paessler** in Pompano Beach, FL, I focus on building scalable monitoring and observability solutions that help organizations understand their complex systems.
+I'm a technology leader passionate about **observability**, **distributed systems**, and **open source**. Currently working at **Spacelift** in Pompano Beach, FL, I focus on building scalable monitoring and observability solutions that help organizations understand their complex systems.
 
 ### 🎯 Expertise
 
