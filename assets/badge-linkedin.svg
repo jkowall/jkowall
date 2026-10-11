@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="168.75" height="28" role="img" aria-label="LINKEDIN: CONNECT">
+  <title>LINKEDIN: CONNECT</title>
+  <g shape-rendering="crispEdges">
+    <rect width="83" height="28" fill="#555555"/>
+    <rect x="83" width="85.75" height="28" fill="#0077b5"/>
+  </g>
+  
+  <g fill="#ffffff" text-anchor="middle" font-family="Verdana, Geneva, DejaVu Sans, sans-serif" font-size="10">
+    <text x="41.50" y="18">LINKEDIN</text>
+    <text x="125.88" y="18" font-weight="bold">CONNECT</text>
+  </g>
+</svg>

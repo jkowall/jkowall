@@ -112,6 +112,11 @@ class ProfileAssetTests(unittest.TestCase):
         self.assertIn("A-", images["github-stats.svg"])
         self.assertIn("Total Contributions", images["github-streak.svg"])
         self.assertIn("TypeScript 20.00%", images["top-languages.svg"])
+        self.assertIn("@JKOWALL", images["badge-x.svg"])
+        self.assertIn("CONNECT", images["badge-linkedin.svg"])
+        self.assertIn("JKOWALL@KOWALL.NET", images["badge-email.svg"])
+        self.assertNotIn("data:image", images["badge-x.svg"])
+        self.assertNotIn("data:image", images["badge-email.svg"])
 
     def test_windows_cover_the_range_without_overlap(self) -> None:
         windows = profile.contribution_windows(date(2012, 6, 17), date(2026, 10, 11))

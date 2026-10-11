@@ -4,9 +4,9 @@
 
 ### 🚀 Observability Expert | Open Source Advocate | Technology Leader
 
-[![X](https://img.shields.io/badge/X-%40jkowall-1DA1F2?style=for-the-badge&logo=x&logoColor=white)](https://x.com/jkowall)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/jkowall)
-[![Email](https://img.shields.io/badge/Email-jkowall%40kowall.net-EA4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:jkowall@kowall.net)
+[![X](assets/badge-x.svg)](https://x.com/jkowall)
+[![LinkedIn](assets/badge-linkedin.svg)](https://linkedin.com/in/jkowall)
+[![Email](assets/badge-email.svg)](mailto:jkowall@kowall.net)
 
 </div>
 

@@ -441,14 +441,81 @@ def streak_card(snapshot: dict, streak: dict) -> str:
 """
 
 
+def header_badges() -> dict[str, str]:
+    """Static for-the-badge chips. shields.io copies of these go through camo,
+    which times out on the X badge URL."""
+    x_logo = (
+        "M14.234 10.162 22.977 0h-2.072l-7.591 8.824L7.251 0H.258l9.168 13.343"
+        "L.258 24H2.33l8.016-9.318L16.749 24h6.993zm-2.837 3.299-.929-1.329"
+        "L3.076 1.56h3.182l5.965 8.532.929 1.329 7.754 11.09h-3.182z"
+    )
+    mail_logo = (
+        "M24 5.457v13.909c0 .904-.732 1.636-1.636 1.636h-3.819V11.73L12 16.64"
+        "l-6.545-4.91v9.273H1.636A1.636 1.636 0 0 1 0 19.366V5.457c0-2.023 "
+        "2.309-3.178 3.927-1.964L5.455 4.64 12 9.548l6.545-4.91 1.528-1.145"
+        "C21.69 2.28 24 3.434 24 5.457z"
+    )
+
+    def logo(path: str) -> str:
+        return (
+            '<g transform="translate(9 7) scale(0.58333)">'
+            f'<path fill="#ffffff" d="{path}"/>'
+            "</g>"
+        )
+
+    def chip(
+        label: str,
+        message: str,
+        color: str,
+        label_w: float,
+        value_w: float,
+        mark: str = "",
+        label_x: float | None = None,
+    ) -> str:
+        total = label_w + value_w
+        title = f"{label}: {message}"
+        if label_x is None:
+            label_x = label_w / 2
+        return f"""<svg xmlns="http://www.w3.org/2000/svg" width="{total}" height="28" role="img" aria-label="{esc(title)}">
+  <title>{esc(title)}</title>
+  <g shape-rendering="crispEdges">
+    <rect width="{label_w}" height="28" fill="#555555"/>
+    <rect x="{label_w}" width="{value_w}" height="28" fill="{color}"/>
+  </g>
+  {mark}
+  <g fill="#ffffff" text-anchor="middle" font-family="{BADGE_FONT}" font-size="10">
+    <text x="{label_x:.2f}" y="18">{esc(label)}</text>
+    <text x="{label_w + value_w / 2:.2f}" y="18" font-weight="bold">{esc(message)}</text>
+  </g>
+</svg>
+"""
+
+    return {
+        "badge-x.svg": chip("X", "@JKOWALL", "#1da1f2", 48.25, 97, logo(x_logo), 35.6),
+        "badge-linkedin.svg": chip("LINKEDIN", "CONNECT", "#0077b5", 83, 85.75),
+        "badge-email.svg": chip(
+            "EMAIL",
+            "JKOWALL@KOWALL.NET",
+            "#ea4335",
+            78.25,
+            182.5,
+            logo(mail_logo),
+            50.6,
+        ),
+    }
+
+
 def render_all(snapshot: dict) -> dict[str, str]:
     created = date.fromisoformat(snapshot["created"])
     today = date.fromisoformat(snapshot["today"])
     streak = streaks(snapshot["contributions"], created, today)
-    images = {
-        item["file"]: star_badge(item["owner"], item["repo"], item["stars"])
-        for item in snapshot["repo_stars"]
-    }
+    images = header_badges()
+    images.update(
+        {
+            item["file"]: star_badge(item["owner"], item["repo"], item["stars"])
+            for item in snapshot["repo_stars"]
+        }
+    )
     images["github-stats.svg"] = stats_card(snapshot)
     images["top-languages.svg"] = languages_card(snapshot["languages"])
     images["github-streak.svg"] = streak_card(snapshot, streak)
