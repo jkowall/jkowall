@@ -4,9 +4,9 @@
 
 ### 🚀 Observability Expert | Open Source Advocate | Technology Leader
 
-[![Twitter Follow](https://img.shields.io/twitter/follow/jkowall?style=for-the-badge&logo=x&logoColor=white&color=1DA1F2)](https://x.com/jkowall)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/jkowall)
-[![Email](https://img.shields.io/badge/Email-jkowall%40kowall.net-EA4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:jkowall@kowall.net)
+[![X](assets/badge-x.svg)](https://x.com/jkowall)
+[![LinkedIn](assets/badge-linkedin.svg)](https://linkedin.com/in/jkowall)
+[![Email](assets/badge-email.svg)](mailto:jkowall@kowall.net)
 
 </div>
 
@@ -31,22 +31,22 @@ I'm a technology leader passionate about **observability**, **distributed system
 ## 🌟 Notable Projects
 
 ### [Jaeger](https://github.com/jaegertracing/jaeger) - CNCF Distributed Tracing Platform
-![Stars](https://img.shields.io/github/stars/jaegertracing/jaeger?style=social) | Open source, end-to-end distributed tracing platform
+![Stars](assets/stars-jaeger.svg) | Open source, end-to-end distributed tracing platform
 
 Active maintainer and contributor helping organizations implement distributed tracing and observability at scale for microservices-based distributed systems.
 
 ### [OpenSearch](https://github.com/opensearch-project/OpenSearch)
-![Stars](https://img.shields.io/github/stars/opensearch-project/OpenSearch?style=social) | Open source distributed search and analytics engine
+![Stars](assets/stars-opensearch.svg) | Open source distributed search and analytics engine
 
 Member of the technical steering committee and part of the founding team for this powerful open source search and analytics platform, making advanced search capabilities accessible to everyone.
 
 ### [OpenTelemetry](https://github.com/open-telemetry) - CNCF Observability Framework
-![Stars](https://img.shields.io/github/stars/open-telemetry/opentelemetry-collector?style=social) | Vendor-neutral observability framework
+![Stars](assets/stars-opentelemetry-collector.svg) | Vendor-neutral observability framework
 
 Regular community participant and contributor since the project's inception, driving the future of observability standards and tooling.
 
 ### [Jaeger UI](https://github.com/jaegertracing/jaeger-ui)
-![Stars](https://img.shields.io/github/stars/jaegertracing/jaeger-ui?style=social) | Web interface for Jaeger distributed tracing
+![Stars](assets/stars-jaeger-ui.svg) | Web interface for Jaeger distributed tracing
 
 Building intuitive user experiences for complex observability data.
 
@@ -69,11 +69,11 @@ Building intuitive user experiences for complex observability data.
 
 <div align="center">
 
-![Jonah's GitHub Stats](https://github-stats-extended.vercel.app/api?username=jkowall&show_icons=true&theme=tokyonight&hide_border=true)
+![Jonah's GitHub Stats](assets/github-stats.svg)
 
-![Top Languages](https://github-stats-extended.vercel.app/api/top-langs/?username=jkowall&layout=compact&theme=tokyonight&hide_border=true)
+![Top Languages](assets/top-languages.svg)
 
-![GitHub Streak](https://github-readme-streak-stats.herokuapp.com/?user=jkowall&theme=tokyonight&hide_border=true)
+![GitHub Streak](assets/github-streak.svg)
 
 </div>
 
@@ -95,6 +95,6 @@ Feel free to reach out via [Twitter/X](https://x.com/jkowall), [LinkedIn](https:
 
 ### 💭 *"Making complex systems observable, one trace at a time."*
 
-![Profile Views](https://komarev.com/ghpvc/?username=jkowall&style=for-the-badge&color=blueviolet)
+![Profile Views](assets/profile-views.svg)
 
 </div>
