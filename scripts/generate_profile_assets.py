@@ -29,6 +29,12 @@ VIEWS_URL = "https://komarev.com/ghpvc/?username=jkowall&style=for-the-badge&col
 FONT = "Segoe UI, Ubuntu, sans-serif"
 BADGE_FONT = "Verdana, Geneva, DejaVu Sans, sans-serif"
 
+# Owned repos whose language bytes are vendored caches or third-party trees.
+# PRTG-Sensor-Hub is a Next.js app; GitHub counts committed npm, Homebrew,
+# and node-gyp caches in that repo as C.
+LANGUAGE_EXCLUDED_REPOS = frozenset({"PRTG-Sensor-Hub"})
+VENDORED_C_LANGUAGES = frozenset({"C", "C++"})
+
 # Same order as the Notable Projects section in README.md.
 STAR_REPOS = (
     ("jaegertracing", "jaeger", "stars-jaeger.svg"),
@@ -279,6 +285,45 @@ def star_badge(owner: str, repo: str, stars: int) -> str:
   </g>
 </svg>
 """
+
+
+def repo_counts_toward_languages(name: str, is_fork: bool, edges: list[dict]) -> bool:
+    """Skip forks and repos whose bytes are a vendored C/C++ tree.
+
+    Language cards should follow the code Jonah writes. A repo that is
+    almost entirely C or C++ and larger than 1 MB is treated as a vendored
+    dump, which is what happened with PRTG-Sensor-Hub.
+    """
+    if is_fork or name in LANGUAGE_EXCLUDED_REPOS:
+        return False
+    total = sum(int(edge["size"]) for edge in edges)
+    if total <= 0:
+        return False
+    c_bytes = sum(
+        int(edge["size"])
+        for edge in edges
+        if edge["node"]["name"] in VENDORED_C_LANGUAGES
+    )
+    if total >= 1_000_000 and c_bytes / total >= 0.80:
+        return False
+    return True
+
+
+def language_rows_from_repos(repos: list[dict]) -> list[dict]:
+    languages: dict[str, dict] = {}
+    for repo in repos:
+        edges = repo["languages"]["edges"]
+        if not repo_counts_toward_languages(repo["name"], bool(repo.get("isFork")), edges):
+            continue
+        for edge in edges:
+            name = edge["node"]["name"]
+            slot = languages.setdefault(
+                name, {"name": name, "bytes": 0, "color": edge["node"]["color"]}
+            )
+            slot["bytes"] += int(edge["size"])
+            if not slot["color"] and edge["node"]["color"]:
+                slot["color"] = edge["node"]["color"]
+    return sorted(languages.values(), key=lambda item: item["bytes"], reverse=True)
 
 
 def safe_color(value: object) -> str:
@@ -579,6 +624,8 @@ def fetch_snapshot(auth: str, today: date | None = None) -> dict:
             repositories(first: 100, ownerAffiliations: OWNER, isFork: false, privacy: PUBLIC) {{
               totalCount
               nodes {{
+                name
+                isFork
                 stargazerCount
                 languages(first: 20, orderBy: {{field: SIZE, direction: DESC}}) {{
                   edges {{ size node {{ name color }} }}
@@ -595,17 +642,10 @@ def fetch_snapshot(auth: str, today: date | None = None) -> dict:
     if user["repositories"]["totalCount"] > 100:
         raise SystemExit("more than 100 public owned repositories; pagination is required")
     created = datetime.fromisoformat(user["createdAt"].replace("Z", "+00:00")).date()
-    languages: dict[str, dict] = {}
     stars_earned = 0
     for repo in user["repositories"]["nodes"]:
         stars_earned += repo["stargazerCount"]
-        for edge in repo["languages"]["edges"]:
-            name = edge["node"]["name"]
-            slot = languages.setdefault(name, {"name": name, "bytes": 0, "color": edge["node"]["color"]})
-            slot["bytes"] += edge["size"]
-            if not slot["color"] and edge["node"]["color"]:
-                slot["color"] = edge["node"]["color"]
-    language_rows = sorted(languages.values(), key=lambda item: item["bytes"], reverse=True)
+    language_rows = language_rows_from_repos(user["repositories"]["nodes"])
 
     counts: dict[str, int] = {}
     for start, end in contribution_windows(created, today):

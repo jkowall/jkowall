@@ -2,7 +2,7 @@
 
 # 👋 Hi, I'm Jonah Kowall
 
-### 🚀 Observability Expert | Open Source Advocate | Technology Leader
+### SVP of Product and Design at [Spacelift](https://spacelift.io)
 
 [![X](assets/badge-x.svg)](https://x.com/jkowall)
 [![LinkedIn](assets/badge-linkedin.svg)](https://linkedin.com/in/jkowall)
@@ -14,17 +14,13 @@
 
 ## 💼 About Me
 
-I'm a technology leader passionate about **observability**, **distributed systems**, and **open source**. Currently working at **Spacelift** in Pompano Beach, FL, I focus on building scalable monitoring and observability solutions that help organizations understand their complex systems.
+I'm SVP of Product and Design at [Spacelift](https://spacelift.io), an infrastructure-as-code orchestration company, in Pompano Beach, FL. I own product direction across Deploy, Flows, and Spacelift Intelligence.
 
-### 🎯 Expertise
+Before Spacelift I was at Paessler, Aiven, and Kentik, and I was CTO at Logz.io. At AppDynamics I worked through the S-1, the IPO, and the Cisco acquisition. At Gartner I led the APM Magic Quadrant, created the NPMD Magic Quadrant, and coined the term "Network Packet Broker."
 
-- 🔭 **Observability & Monitoring**: Distributed tracing, metrics, and logging
-- 🌐 **Distributed Systems**: Microservices architecture and cloud-native technologies
-- 📊 **Search & Analytics**: Elasticsearch, OpenSearch, and data platforms
-- 🛠️ **Open Source**: Active contributor and maintainer in CNCF projects
-- 🎤 **Thought Leadership**: Speaking, writing, and industry analysis as a former analyst
-- 📈 **Leadership**: Building and running development, product, UX, design, and production operations teams (100+ people) with a focus on openness, transparency, and collaborative discussion. Strong advocate for the player/coach approach where managers contribute directly to technical work.
-- 👥 **People Development**: Mentoring and building people towards successful careers through servant leadership principles, with a focus on efficiency and leveraging AI to help teams build and iterate faster
+I maintain [Jaeger](https://github.com/jaegertracing/jaeger). I was on the founding team of [OpenSearch](https://github.com/opensearch-project/OpenSearch) and sit on its technical steering committee. I have run product, design, and engineering teams of 100+ people, and I still do technical work.
+
+I scuba dive reefs and wrecks and take underwater photos. The code for that is in [underwater-photo-processing](https://github.com/jkowall/underwater-photo-processing), [Barefoot-Dive](https://github.com/jkowall/Barefoot-Dive) (dive planning), and [Barefoot-Blender](https://github.com/jkowall/Barefoot-Blender) (gas blending).
 
 ---
 
@@ -40,7 +36,7 @@ Active maintainer and contributor helping organizations implement distributed tr
 
 Member of the technical steering committee and part of the founding team for this powerful open source search and analytics platform, making advanced search capabilities accessible to everyone.
 
-### [OpenTelemetry](https://github.com/open-telemetry) - CNCF Observability Framework
+### [OpenTelemetry Collector](https://github.com/open-telemetry/opentelemetry-collector) - CNCF Observability Framework
 ![Stars](assets/stars-opentelemetry-collector.svg) | Vendor-neutral observability framework
 
 Regular community participant and contributor since the project's inception, driving the future of observability standards and tooling.

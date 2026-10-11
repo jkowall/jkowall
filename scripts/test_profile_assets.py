@@ -118,6 +118,36 @@ class ProfileAssetTests(unittest.TestCase):
         self.assertNotIn("data:image", images["badge-x.svg"])
         self.assertNotIn("data:image", images["badge-email.svg"])
 
+    def test_language_stats_skip_vendored_c_and_forks(self) -> None:
+        def repo(name: str, languages: dict[str, int], is_fork: bool = False) -> dict:
+            return {
+                "name": name,
+                "isFork": is_fork,
+                "languages": {
+                    "edges": [
+                        {"size": size, "node": {"name": lang, "color": "#cccccc"}}
+                        for lang, size in languages.items()
+                    ]
+                },
+            }
+
+        rows = profile.language_rows_from_repos(
+            [
+                repo("PRTG-Sensor-Hub", {"C": 59_000_000, "TypeScript": 300_000}),
+                repo("some-c-fork", {"C": 5_000_000, "C++": 200_000}, is_fork=True),
+                repo("cached-native-tree", {"C": 2_000_000, "C++": 100_000}),
+                repo("planeahead", {"TypeScript": 5_000_000, "JavaScript": 200_000}),
+                repo("underwater-photo-processing", {"Python": 80_000}),
+            ]
+        )
+        names = [item["name"] for item in rows]
+        self.assertEqual(names[0], "TypeScript")
+        self.assertIn("Python", names)
+        self.assertNotIn("C", names)
+        self.assertNotIn("C++", names)
+        typescript = next(item for item in rows if item["name"] == "TypeScript")
+        self.assertEqual(typescript["bytes"], 5_000_000)
+
     def test_windows_cover_the_range_without_overlap(self) -> None:
         windows = profile.contribution_windows(date(2012, 6, 17), date(2026, 10, 11))
         self.assertEqual(windows[0][0], date(2012, 6, 17))
