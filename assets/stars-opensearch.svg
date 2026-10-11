@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="73" height="20" role="img" aria-label="opensearch-project/OpenSearch: 13,845 stars">
+  <title>opensearch-project/OpenSearch: 13,845 stars</title>
+  <g shape-rendering="crispEdges">
+    <rect width="42" height="20" fill="#555555"/>
+    <rect x="42" width="31" height="20" fill="#007ec6"/>
+  </g>
+  <g fill="#ffffff" text-anchor="middle" font-family="Verdana, Geneva, DejaVu Sans, sans-serif" font-size="11">
+    <text x="21.0" y="14">stars</text>
+    <text x="57.5" y="14" font-weight="bold">14k</text>
+  </g>
+</svg>
