@@ -25,6 +25,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parent.parent
 ASSETS = ROOT / "assets"
 USER = "jkowall"
+VIEWS_URL = "https://komarev.com/ghpvc/?username=jkowall&style=for-the-badge&color=blueviolet"
 FONT = "Segoe UI, Ubuntu, sans-serif"
 BADGE_FONT = "Verdana, Geneva, DejaVu Sans, sans-serif"
 
@@ -670,6 +671,37 @@ def fetch_snapshot(auth: str, today: date | None = None) -> dict:
     }
 
 
+def fetch_profile_views() -> str | None:
+    """Download the view counter once, at generation time.
+
+    GitHub's image proxy currently fails this host (503/504) even though the
+    origin returns an SVG. Saving the file means the profile does not depend
+    on that proxy. The daily workflow refreshes the count.
+    """
+    request = urllib.request.Request(VIEWS_URL, headers={"User-Agent": "jkowall-profile-readme"})
+    try:
+        with urllib.request.urlopen(request, timeout=20) as response:
+            status = response.status
+            ctype = response.headers.get("content-type", "")
+            body = response.read()
+    except (urllib.error.URLError, TimeoutError) as error:
+        print(f"profile views fetch failed: {error}")
+        return None
+    if status != 200 or not ctype.startswith("image/"):
+        print(f"profile views fetch returned {status} {ctype}")
+        return None
+    text = body.decode("utf-8")
+    if "<script" in text.lower() or "href=\"http" in text.lower():
+        print("profile views svg contained a script or remote link; ignored")
+        return None
+    try:
+        ET.fromstring(text)
+    except ET.ParseError as error:
+        print(f"profile views svg did not parse: {error}")
+        return None
+    return text if text.endswith("\n") else text + "\n"
+
+
 def write_images(images: dict[str, str]) -> None:
     ASSETS.mkdir(exist_ok=True)
     expected = set(images)
@@ -687,6 +719,15 @@ def write_images(images: dict[str, str]) -> None:
 def main() -> None:
     snapshot = fetch_snapshot(token())
     images = render_all(snapshot)
+    views = fetch_profile_views()
+    cached_views = ASSETS / "profile-views.svg"
+    if views:
+        images["profile-views.svg"] = views
+    elif cached_views.is_file():
+        print("kept existing profile-views.svg")
+        images["profile-views.svg"] = cached_views.read_text()
+    else:
+        raise SystemExit("profile views image is missing and komarev did not return an SVG")
     write_images(images)
     created = date.fromisoformat(snapshot["created"])
     today = date.fromisoformat(snapshot["today"])

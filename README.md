@@ -95,6 +95,6 @@ Feel free to reach out via [Twitter/X](https://x.com/jkowall), [LinkedIn](https:
 
 ### 💭 *"Making complex systems observable, one trace at a time."*
 
-![Profile Views](https://komarev.com/ghpvc/?username=jkowall&style=for-the-badge&color=blueviolet)
+![Profile Views](assets/profile-views.svg)
 
 </div>
