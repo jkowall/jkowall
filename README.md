@@ -24,27 +24,33 @@ I scuba dive reefs and wrecks and take underwater photos. The code for that is i
 
 ---
 
+## 🏗️ Infrastructure as Code
+
+At Spacelift I work on how teams run OpenTofu, Terraform, Pulumi, Ansible, and Kubernetes at scale: orchestration, policy, drift, and observability for IaC runs. At AWS re:Invent this year I'm talking about tracing `tofu apply`.
+
+---
+
 ## 🌟 Notable Projects
 
 ### [Jaeger](https://github.com/jaegertracing/jaeger) - CNCF Distributed Tracing Platform
 ![Stars](assets/stars-jaeger.svg) | Open source, end-to-end distributed tracing platform
 
-Active maintainer and contributor helping organizations implement distributed tracing and observability at scale for microservices-based distributed systems.
+Maintainer; I review PRs and help shape the roadmap and releases.
 
 ### [OpenSearch](https://github.com/opensearch-project/OpenSearch)
 ![Stars](assets/stars-opensearch.svg) | Open source distributed search and analytics engine
 
-Member of the technical steering committee and part of the founding team for this powerful open source search and analytics platform, making advanced search capabilities accessible to everyone.
+Member of the technical steering committee and part of the founding team.
 
 ### [OpenTelemetry Collector](https://github.com/open-telemetry/opentelemetry-collector) - CNCF Observability Framework
 ![Stars](assets/stars-opentelemetry-collector.svg) | Vendor-neutral observability framework
 
-Regular community participant and contributor since the project's inception, driving the future of observability standards and tooling.
+Community participant and contributor since the early days.
 
 ### [Jaeger UI](https://github.com/jaegertracing/jaeger-ui)
 ![Stars](assets/stars-jaeger-ui.svg) | Web interface for Jaeger distributed tracing
 
-Building intuitive user experiences for complex observability data.
+Maintainer on the Jaeger web UI.
 
 ---
 
@@ -52,12 +58,13 @@ Building intuitive user experiences for complex observability data.
 
 | Category | Technologies |
 |---|---|
+| 🏗️ **Infrastructure as Code** | OpenTofu, Terraform, Pulumi, Ansible, CloudFormation |
 | 💻 **Languages** | Go, Java, JavaScript/TypeScript, Python |
 | ☁️ **Platforms** | Kubernetes, Docker, AWS, Azure, Google Cloud, Oracle Cloud |
 | 🔭 **Observability** | Jaeger, OpenTelemetry, Prometheus, Grafana, Thanos |
 | 🔍 **Search** | OpenSearch, Elasticsearch |
 | 🗄️ **Databases** | PostgreSQL, Cassandra, ClickHouse, Redis |
-| 🛠️ **Tools** | Git, CI/CD, Terraform, Helm |
+| 🛠️ **Tools** | Git, CI/CD, Helm |
 
 ---
 
@@ -78,18 +85,17 @@ Building intuitive user experiences for complex observability data.
 ## 🤝 Let's Connect!
 
 I'm always interested in discussing:
+- 🏗️ Infrastructure as code and platform engineering
 - 💡 Observability and monitoring strategies
 - 🌐 Open source collaboration opportunities
 - 🚀 Cloud-native architectures
 - 📈 Technology leadership and team building
 
-Feel free to reach out via [Twitter/X](https://x.com/jkowall), [LinkedIn](https://linkedin.com/in/jkowall), or [email](mailto:jkowall@kowall.net)!
+Feel free to reach out via [X](https://x.com/jkowall), [LinkedIn](https://linkedin.com/in/jkowall), or [email](mailto:jkowall@kowall.net)!
 
 ---
 
 <div align="center">
-
-### 💭 *"Making complex systems observable, one trace at a time."*
 
 ![Profile Views](assets/profile-views.svg)
 
